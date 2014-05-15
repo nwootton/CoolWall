@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>Static Heat Map</title>
+		
+		<!-- Local: Load JS Libraries -->
+	    <script type="text/javascript" src="/js/jquery-1.7.1.min.js" ></script>
+	    <script type="text/javascript" src="/js/jquery-ui-1.8.18.custom.min.js" ></script>
+<!-- 
+		<script type="text/javascript" src="js/jquery-ui-1.8.16/core/jquery-ui-core-1.8.16.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16/core/jquery-ui-widget-1.8.16.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16/core/jquery-ui-mouse-1.8.16.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16/interactions/jquery-ui-draggable-1.8.16.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16/interactions/jquery-ui-droppable-1.8.16.js"></script>
+ -->		
+	</head>
+	
+	<body>
+
+<DIV id="move" style="width:150px;height:150px;background-color:blue;border:1px solid #999999"> Drag Me!</DIV>
+
+	<SCRIPT>
+	$(document).ready(function(){
+		$("#move").draggable();
+	});
+	</SCRIPT>	
+		
+	</body>
+
+</html>

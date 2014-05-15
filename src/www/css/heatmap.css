@@ -1,0 +1,118 @@
+/* line 1, ../../../SASS/heatmap.scss */
+html {
+  min-height: 100%;
+}
+
+/* line 6, ../../../SASS/heatmap.scss */
+body {
+  font-family: 'Helvetica Neue Light', arial, serif;
+  font-size: 12px;
+  color: #333;
+  background-image: url("/assets/concrete_wall_2_2.png");
+}
+
+/* line 14, ../../../SASS/heatmap.scss */
+#board {
+  position: relative;
+  background-color: #dcd5d1;
+  width: 1920px;
+  height: 1080px;
+  xborder: solid silver 8px;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.49, #d6d2ce), color-stop(0.84, #c4bfb6));
+  xbackground: -moz-linear-gradient(top, #d6d2ce, black);
+  -webkit-box-shadow: inset 1px 1px 3px #999;
+  -moz-box-shadow: inset 1px 1px 3px #999;
+  box-shadow: inset 1px 1px 3px #999;
+}
+
+/* line 37, ../../../SASS/heatmap.scss */
+.board-outline {
+  border: solid #ccc 8px;
+  display: block;
+  width: 1920px;
+  height: 1080px;
+  xmargin-left: auto;
+  xmargin-right: auto;
+  -webkit-box-shadow: 1px 3px 2px #aaa;
+  -moz-box-shadow: 1px 3px 2px #999;
+  x-webkit-transform: rotate(5.3deg);
+  /*"is that a little off-level? i feel like it is off-level"*/
+}
+
+/* line 52, ../../../SASS/heatmap.scss */
+#board-doodles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline;
+  opacity: 0.15;
+  background-image: url("/assets/scribbles2.png");
+}
+
+/* line 61, ../../../SASS/heatmap.scss */
+.card, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .title {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  background-repeat: no-repeat;
+  font-family: Verdana, sans-serif;
+  background-size: 100% 100%;
+}
+
+/* line 70, ../../../SASS/heatmap.scss */
+.card, .card3, .card6 {
+  background-image: url("/assets/yellow-card.png");
+}
+
+/* line 74, ../../../SASS/heatmap.scss */
+.card1, .card4, .card7 {
+  background-image: url("/assets/blue-card.png");
+}
+
+/* line 78, ../../../SASS/heatmap.scss */
+.card2, .card5, .card8 {
+  background-image: url("/assets/green-card.png");
+}
+
+/* line 83, ../../../SASS/heatmap.scss */
+.card h3, .card .content, .card .owner, .card1 h3, .card1 .content, .card1 .owner, .card2 h3, .card2 .content, .card2 .owner, .card3 h3, .card3 .content, .card3 .owner, .card4 h3, .card4 .content, .card4 .owner, .card5 h3, .card5 .content, .card5 .owner, .card6 h3, .card6 .content, .card6 .owner, .card7 h3, .card7 .content, .card7 .owner, .card8 h3, .card8 .content, .card8 .owner {
+  position: relative;
+  width: 140px;
+  top: 3px;
+  left: 31px;
+  overflow: hidden;
+}
+/* line 93, ../../../SASS/heatmap.scss */
+.card h3, .card1 h3, .card2 h3, .card3 h3, .card4 h3, .card5 h3, .card6 h3, .card7 h3, .card8 h3 {
+  text-align: center;
+  font-size: 10px;
+}
+/* line 98, ../../../SASS/heatmap.scss */
+.card .content, .card1 .content, .card2 .content, .card3 .content, .card4 .content, .card5 .content, .card6 .content, .card7 .content, .card8 .content {
+  font-size: 10px;
+  height: 50px;
+  overflow: hidden;
+  padding: 5px;
+}
+/* line 105, ../../../SASS/heatmap.scss */
+.card .owner, .card1 .owner, .card2 .owner, .card3 .owner, .card4 .owner, .card5 .owner, .card6 .owner, .card7 .owner, .card8 .owner {
+  font-size: 8px;
+  text-align: right;
+}
+
+/* line 113, ../../../SASS/heatmap.scss */
+.title {
+  background-image: url("/assets/white-card.png");
+}
+/* line 116, ../../../SASS/heatmap.scss */
+.title h3 {
+  position: relative;
+  width: 130px;
+  top: 10px;
+  left: 30px;
+  padding: 5px;
+  margin: 1px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 10px;
+}
